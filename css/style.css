@@ -1,0 +1,1175 @@
+html {
+    --light-blue: #87CEEB;
+    --black: #000000;
+    --grey: #818589;
+    --beige: #EADDCA;
+    --navy-blue: #352380;
+    --white: #FFF;
+    --text-color: var(--white);
+    box-sizing: border-box;
+    line-height: 1.5;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--white);
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-blue);
+
+}
+
+.logo {
+    font-size: 1.5rem;
+    margin-right: auto;
+    margin-left: 20px;
+
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.navbar-links li {
+    list-style-type: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:active {
+    transform: translateY(1px);
+}
+
+.navbar-links li a:hover {
+    background-color: var(--beige);
+}
+
+.toggle-button {
+    position: absolute;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 30px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.hero-image-container {
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../asset/petshero_image.jpg');
+}
+
+.services p {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    list-style: none;
+    padding: 1.5rem 2rem;
+}
+
+.grid-container img {
+    width: 50px;
+    height: 50px;
+}
+
+h2 {
+    text-align: center;
+    color: var(--navy-blue);
+    font-size: 3.5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.grid-container li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+h2 {
+    font-size: 3.5em;
+}
+
+.programs img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1.75em;
+    ;
+    margin-top: 2.5em;
+    padding: 2em;
+}
+
+.programs p {
+    padding: .5em 2.5em;
+
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+
+}
+
+.cta-buttons button {
+    background-color: var(--light-blue);
+    font-family: 'Montserrat', sans-serif;
+    width: 10em;
+    height: 4em;
+    color: var(--white);
+    border: none;
+    border-radius: .4rem;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    ;
+}
+
+.cta-buttons li:hover button {
+    color: var(--white);
+    background-color: beige;
+}
+
+.cta-buttons button:active {
+    color: var(--navy-blue);
+    background-color: beige;
+    transform: translateY(2px);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.donor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 2em;
+}
+
+.donor p {
+    margin: 1.5em;
+    padding: 1em;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.hours-of-operation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 5em;
+}
+
+.day-of-week {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.hours {
+    text-align: center;
+    padding-left: 10px;
+}
+
+.hours-of-operation p {
+    margin: 5px 0;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid var(--light-blue);
+    border-radius: 5px;
+}
+
+
+.form_title {
+    font-size: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: var(--light-blue);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    letter-spacing: .1rem;
+}
+
+input[type="submit"]:active {
+    color: var(--navy-blue);
+    background-color: beige;
+    transform: translateY(2px);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--beige);
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="radio"]+label {
+    margin-right: 20px;
+}
+
+input[type="radio"]:last-of-type {
+    margin-right: 0;
+}
+
+.form_title {
+    text-align: center;
+    font-size: 2em;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact_info1 {
+    margin-top: 20px;
+
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.statistics_section {
+    background-color: var(--light-blue);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 var(--light-blue);
+    margin-bottom: 5em;
+}
+
+.statistics_section h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.statistics_section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.statistics_section li {
+    margin-bottom: 10px;
+}
+
+.statistics_section li .label {
+    font-weight: bold;
+    color: var(--black);
+}
+
+.statistics_section li .value {
+    font-weight: bold;
+    color: var(--text-color)
+}
+
+.hero_container {
+    height: 600px;
+    background-image: url('../asset/Introducing-a-cat-or-kitten-to-your-dog.png');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2.5rem;
+
+}
+
+.our_mission h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--white);
+    letter-spacing: 6px;
+}
+
+.our_mission p {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--white);
+}
+
+.naws_facts {
+    padding: 20px;
+    margin: 4em;
+}
+
+.naws_facts h2 {
+    font-size: 35px;
+}
+
+.naws_facts p {
+    line-height: 2;
+}
+
+footer {
+    text-align: center;
+}
+
+.services_page li {
+    display: inline-block;
+    text-align: center;
+    width: 500px;
+    margin: 1.5em;
+}
+
+.services_page li img {
+    width: 100%;
+    margin-top: -2em;
+}
+
+.service_title {
+    margin-top: 2em;
+}
+
+.qol_section {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.qol_section h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--navy-blue);
+    font-size: 40px;
+}
+
+.qol_section p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.itsTime_section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.itsTime_section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: var(--navy-blue);
+    font-size: 40px;
+}
+
+.itsTime_section h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: var(--navy-blue);
+    font-size: 20px;
+}
+
+.itsTime_section p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.qol_page {
+    line-height: 2;
+}
+
+.testing_pet {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.testing_pet h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: var(--navy-blue);
+    font-size: 40px;
+}
+
+.testing_pet h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: var(--navy-blue);
+    font-size: 20px;
+}
+
+.testing_pet p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact_page {
+    border: 2px solid var(--grey);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+.contact_page input[type="submit"] {
+    background-color: var(--light-blue);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    letter-spacing: .1rem;
+}
+
+.contact_page input[type="submit"]:active {
+    color: var(--navy-blue);
+    background-color: beige;
+    transform: translateY(2px);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.contact_page input[type="submit"]:hover {
+    background-color: var(--beige);
+}
+
+.contact_page input[type="radio"] {
+    margin-right: 10px;
+}
+
+.contact_page input[type="radio"]+label {
+    margin-right: 20px;
+}
+
+.contact_page input[type="radio"]:last-of-type {
+    margin-right: 0;
+}
+
+.hours-of-operation2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 5em;
+    line-height: 3;
+}
+
+.day-of-week2 {
+    text-align: right;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.hours2 {
+    text-align: center;
+    padding-left: 10px;
+}
+
+.hours-of-operation2 p {
+    margin: 5px 0;
+}
+
+.contact_info {
+    margin-top: 40px;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.contactpage_ul li {
+    list-style-type: none;
+    line-height: 3;
+}
+
+.form2 {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.services_page {
+    padding: 20px;
+
+}
+
+.services_page h2 {
+    font-size: 48px;
+}
+
+.services_page p {
+    line-height: 2;
+}
+
+.serviceH2 h2 {
+    font-size: 64px;
+}
+
+
+.services_page button {
+    background-color: var(--light-blue);
+    width: 10em;
+    height: 3em;
+    color: var(--white);
+    border: none;
+    border-radius: .4rem;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.services_page button:hover {
+    color: var(--white);
+    background-color: beige;
+}
+
+.services_page button:active {
+    color: var(--navy-blue);
+    background-color: beige;
+    transform: translateY(2px);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.services_page img {
+    width: 250px;
+    height: 175px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+h1{
+    text-align: center;
+    font-size: 42px;
+    margin:1em;
+    padding:.3em;
+
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color:var(--light-blue);
+    font-style: italic;
+}
+.description a{
+    display: inline;
+}
+@media (max-width: 600px) {
+
+    .toggle-button {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 31px;
+        height: 30px;
+        top: 22px;
+    }
+    .description a{
+        text-decoration: none;
+    }
+ 
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        width: 100%;
+        padding-bottom: 20px;
+        padding-top: 5px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: 1.5rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .hero-image-container {
+        background-image: url('../asset/petshero_image.jpg');
+    }
+
+    .our_mission h1 {
+        font-size: 48px;
+    }
+
+    .hero-image {
+        height: 50vh;
+        width: 100%;
+        background-image: url('../asset/sleepingcatanddog.jpg');
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 2.5rem;
+
+    }
+
+    .service_title h2 {
+        font-size: 48px;
+    }
+
+    .service_title a {
+        text-decoration: none;
+        font-size: 22px;
+    }
+
+    .services_page button {
+        display: block;
+        margin: 0 auto;
+
+    }
+
+    .services_page p {
+        padding-bottom: 45px;
+    }
+
+    .qol_page h1 {
+        font-size: 42px;
+    }
+
+    .qol_page h3 {
+        font-size: 24px;
+        margin: 2em;
+    }
+
+    .qol_page p {
+        font-size: 16px;
+        line-height: 2.5;
+        padding: 0 20px;
+        margin: 1.5em;
+    }
+
+    .its_Time {
+        text-align: center;
+        font-size: 40px;
+        color: var(--navy-blue);
+    }
+
+    .testing_pet h2 {
+        font-size: 40px;
+    }
+    p{
+        font-size: 16px;
+        padding: 15px;
+        margin: 2em;
+        line-height:2.5;
+
+    }
+    
+  h2{
+    font-size: 38px;
+  }
+  .audit-materials a {
+    display:block;
+    text-align: center;
+    font-size: 20px;
+  }
+  .eval-validation a{
+    display:block;
+    text-align: center;
+    font-size: 20px;
+  }
+  .footer a{
+    font-size: 20px;
+    padding:10px;
+    margin:.2em;
+    display: block;
+  }
+}
+@media (min-width: 600px) {
+    .navbar-links li {
+        margin: 0;
+        padding: .5rem;
+    }
+
+    .navbar-links ul {
+        padding: .5rem;
+    }
+
+    .hero-image {
+        height: 100vh;
+        width: 100%;
+
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+        width: 100%;
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    .hero-image-container {
+        height: 600px;
+        background-size: cover;
+        background-position: center;
+        background-image: url('../asset/petshero_image.jpg');
+    }
+
+    .hero-image {
+        height: 60vh;
+        background-image: url('../asset/sleepingcatanddog.jpg');
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 2.5rem;
+
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: flex-end;
+    }
+
+    .grid-container li {
+        list-style: none;
+        text-align: center;
+        padding-left: 2em;
+        font-size: 20px;
+        width: 150px;
+    }
+
+    .grid-container img {
+        width: 30px;
+        height: 30px;
+        max-width: fit-content;
+    }
+
+    .services p {
+        font-size: 20px;
+        margin-top: 1.5em;
+    }
+
+    .programs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .programs img {
+        width: 250px;
+        height: 220px;
+    }
+
+    .programs p {
+        font-size: 14px;
+    }
+
+    .programs h2 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin-top: 2.5em;
+        margin-bottom: 10px;
+        font-size: 40px;
+    }
+
+    .our_mission h1 {
+        font-size: 48px;
+    }
+
+    .our_mission p {
+        font-size: 20px;
+    }
+
+    .naws_facts h2 {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 40px;
+    }
+
+    .naws_facts p {
+        line-height: 3;
+    }
+
+    .statistics_section {
+        margin: 40px;
+    }
+
+    .statistics_section ul {
+        text-align: center;
+    }
+
+    .services_page p {
+        line-height: 3;
+        font-size: 1.15em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .services_page button {
+        display: block;
+        margin: 0 auto;
+        height: 4em;
+        width: 15em;
+        letter-spacing: 3px;
+    }
+
+    .services_page img {
+        width: 280px;
+        height: 175px;
+    }
+
+    .qol_page p {
+        line-height: 2.5;
+        margin: 2em;
+        padding: 2em;
+    }
+
+    .qol_page h3 {
+        font-size: 20px;
+    }
+
+    .testing_pet p {
+        padding: 10px;
+    }
+
+    .testing_pet h2 {
+        font-size: 40px;
+    }
+
+    .its_Time {
+        text-align: center;
+        font-size: 40px;
+        color: var(--navy-blue);
+    }
+
+    .contactpage_ul li {
+        text-align: center;
+    }
+
+    .contact_info p {
+        text-align: center;
+        line-height: 1.8;
+    }
+
+    .contact_page {
+        width: 70%;
+        margin: 0 auto;
+        border: 2px solid var(--navy-blue);
+    }
+    
+    .hours-of-operation{
+        gap:20px
+    }
+    .hours-of-operation2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .day-of-week2{
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        justify-self: end;
+    }
+    .hours{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        justify-self: start;
+        
+    }
+    p{
+        font-size: 16px;
+        padding: 15px;
+        margin: 2em;
+        line-height:2.5;
+
+    }
+    a{
+        text-decoration: none;
+        font-weight: bold;
+        color:var(--light-blue);
+        font-style: italic;
+    }
+  h2{
+    font-size: 38px;
+  }
+  .audit-materials a {
+    display:block;
+    text-align: center;
+    font-size: 20px;
+  }
+  .eval-validation a{
+    display:block;
+    text-align: center;
+    font-size: 20px;
+  }
+  .footer a{
+    font-size: 20px;
+    padding:10px;
+    margin:.2em;
+    display: block;
+  }
+
+}
+ @media (min-width: 1024px) {
+
+    .hero-image {
+        height: 60vh;
+        background-image: url('../asset/sleepingcatanddog.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: flex-end;
+    }
+
+    .grid-container li {
+        list-style: none;
+        text-align: center;
+        padding-left: 4em;
+        margin-left: 10px;
+    }
+
+    .grid-container img {
+        width: 50px;
+        height: 50px;
+        max-width: fit-content;
+    }
+
+    .programs {
+        grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+    }
+
+    .hours-of-operation {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+   
+    .form_grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .form h2 {
+        padding-bottom: 40px;
+    }
+
+    .statistics_section {
+        margin: 0 auto;
+        display: block;
+        width: 50%
+    }
+
+
+    .service-heading {
+        text-align: center;
+    }
+
+    .services_page .service-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 50px;
+        padding: 50px;
+    }
+
+    .services_page p {
+        line-height: 2;
+
+    }
+
+
+    .qol_page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px
+    }
+
+    .testing_pet {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .testing_pet h2 {
+        font-size: 40px;
+        margin-top: 3em;
+    }
+
+    .qol_page p {
+        padding: 0;
+    }
+
+    .qol_section h1 {
+        margin-top: 100px;
+    }
+
+    .itsTime_section {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 20px;
+    }
+
+    .itsTime_section .its_Time {
+        display: block
+    }
+
+    .its_Time {
+        text-align: center;
+        font-size: 40px;
+        color: var(--navy-blue);
+    }
+
+    .itsTime_section h3 {
+        font-size: 30px;
+        padding-top: 1em;
+    }
+
+    .itsTime_section p {
+        font-size: 16px;
+        line-height: 3;
+        margin: 3em;
+        padding: 1.5em;
+    }
+
+    .hero-image-container {
+        height: 70vh;
+        background-size: contain;
+        background-position: center;
+        background-image: url('../asset/petshero_image.jpg');
+        background-repeat: no-repeat;
+    }
+
+    .services h2 {
+        margin: 0;
+        margin-bottom: 3em;
+    }
+    .contact_page {
+        width: 40%;
+        margin: 0 auto;
+    }
+    .contact_info1 {
+       text-align: center;
+       margin-top: 2em;
+       padding: 20px;
+       list-style-type: none;
+    }
+}
